@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  body{
+    font-family:sans-serif;
+  }
+     .contenedor{
+             background-color: rgb(30, 226, 177);
+             height:95vh ;
+             margin:7%;
+               display:flex;
+               flex-direction:column ;
+               justify-content:center ;
+               align-items:center ;   
+     }
+    p{
+      width:80% ;
+    }
+</style>
+</head>
+<!DOCTYPE html>
+<html>
+
+  <style>
+    h1 {
+      font-size: 30px;           
+      font-family:cursive, serif;  
+      color: rgb(255, 255, 255);            
+    }
+
+    p {
+      font-family:Arial, Helvetica, sans-serif;
+      width: 90%;
+      font-size:18px;
+      color: rgb(253, 253, 253);
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Feliz cumpleaños 19!</h1>
+
+    <p>
+     Amor, te amo demasiado. Me alegra demasiado pasar este cumpleaños contigo y que seamos novias. 
+     Estoy demasiado agradecida por que me amas como ninguna otra persona lo haría y apoyarme en todo.
+     Eres muy especial para mí, la única persona que me entiende y conoce en realidad. Eres mi felicidad
+     y mi todo. En pocas palabras, estaría super perdida si no hubieras llegado a mi vida.
+     Me siento tan afortunada por tenerte a mi lado y sé que vamos a pasar demasiados años juntas espero,
+     hasta que me muera, porque te amo demasiado. Eres muy linda en todos los aspectos, muy lista, fuerte y 
+     demasiado tierna, aunque no lo admitas. Perfecta en todos los sentidos, y ante mis ojos, siempre lo vas
+     a ser. Obvio que tengo a la novia más perfecta y nadie me la va a quitar.
+     Espero estar haciendo las cosas bien y que estés igual de enamorada como yo lo estoy de ti, mi niña.
+     Podría pasarme día y noche durante meses, años o décadas hablando de ti y de todo lo bueno que tienes 
+     o que me haces sentir, porque así es y siempre ha sido así. No soy de creer demasiado en vidas pasadas o
+     en el destino, pero amor, te juro que nosotras teníamos que encontrarnos para estar juntas por la 
+     eternidad. Porque cuando te conocí, aunque fue un pequeño caos al inicio, todo quedó perfecto y
+     volvería a pasar por todo eso solo para quedarme y estar contigo.
+     Te entrego mi corazón en serio. Eres mi sueño hecho realidad, mi super mujer ideal. Nos completamos 
+     tan bien y sé que siempre va a ser así. Que cualquier cosa, aunque sea la más mínima, la vamos a superar,
+     porque realmente quiero quedarme contigo y quiero que solo tú seas mi único amor. Porque nada en la vida
+     me dolería más que perderte. Sentiría que me moriría y no sería una exageración. Hasta siento que esa 
+     expresión se queda corta. Y obviamente, no quiero sonar tóxica o algo así, pero es la verdad. No sé qué
+     haría sin ti, mi amor. Eres mi corazón y mi razón de vivir.
+     Casi no soy de escribir cosas así, pero te entrego y expreso todo mi amor en este código que me quedó 
+     exótico jajaja. 🎂🥳 Feliz cumple, dul, mi rukaleta linda, mi felicidad y mi todo. Te deseo todo lo bueno del
+      mundo. Sé que este año va a ser de los mejores para ti, mi amor. Te adoro con todo mi ser, mi alma y 
+     todo lo bueno que te puedo dar. Te amo, dul. 🩷✨💕🎉 <br>
+    </p>
+ 
+
+ <!DOCTYPE html>
+   <html lang="es">
+   <head>
+   <meta charset="UTF-8">
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+   <style>
+   </style>
+   </head>
+   <body>
+
+  <script>
+    function lanzarConfeti() 
+   {
+    const duration = 60 * 1000; // 60 segundos
+    const end = Date.now() + duration;
+
+    (function frame() {
+      confetti({
+         particleCount: 5,
+         angle: 60,
+         spread: 100,
+         origin: { x: 0 }
+       });
+      confetti({
+         particleCount: 5,
+         angle: 120,
+         spread: 100,
+         origin: { x: 1 }
+       });
+
+      confetti({
+         particleCount: 5,
+         angle: 240,
+         spread: 100,
+         origin: { x: 2 }
+       });
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+     })();
+  }
+
+  window.onload = lanzarConfeti;
+</script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globos Animados</title>
+  <style>
+
+    .globo {
+      position: absolute;
+      bottom: -150px; 
+      width: 110px;
+      height: 140px;
+      border-radius: 50% 50% 45% 45%;
+      box-shadow: inset -5px -10px rgba(255, 255, 255, 0.3);
+      animation: flotar 7s linear infinite;
+    }
+
+    .globo::before {
+      content: "";
+      position: absolute;
+      bottom: -80px; 
+      left: 50%;
+      width: 3px;
+      height: 90px; 
+      background-color: #aaaaaa80;
+      transform: translateX(-50%);
+    }
+
+  @keyframes flotar {
+     0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-130vh) translateX(20px); 
+        opacity: 0;
+     }
+  }
+  </style>
+</head>
+<body>
+   <div class="globo" style="left: 0%; background-color:  #ffa1a1b2; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 10%; background-color: #8b4dff9a; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 20%; background-color: #4dd0e1b4; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 30%; background-color: #81c784ab; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 40%; background-color: #ffd64fa6; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 50%; background-color: #4bffb49c; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 60%; background-color: #e963d7bb; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 70%; background-color: #ff9d42c0; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 80%; background-color: #302cffce; animation-delay: 0s;"></div> 
+   <div class="globo" style="left: 90%; background-color: #ff5555b6; animation-delay: 0s;"></div> 
+   
+</body>
+<html lang="en">
+<head>
+       <audio controls>
+
+       <source src="1.mp3.mpeg"type="audio/mpeg">
+      </audio>
+</body>
+</head>
+
+</html>
+
+
